@@ -43,6 +43,8 @@ Part 1 focuses on building the foundational website structure and content:
 - `policies.html` - Policies and terms
 - `Previousevents.html` - Past events
 -  Web part 1/Images/Sitemap.png
+-  <img width="595" height="929" alt="image" src="https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07" />
+
   
 
 
