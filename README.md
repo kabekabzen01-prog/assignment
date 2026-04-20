@@ -42,7 +42,7 @@ Part 1 focuses on building the foundational website structure and content:
 - `contact.html` - Contact information
 - `policies.html` - Policies and terms
 - `Previousevents.html` - Past events
-- <img width="772" height="871" alt="image" src="https://github.com/user-attachments/assets/ffde1a32-5eff-4ef9-8da1-ba4380c62877" />
+  
 
 
 ## Changelog
