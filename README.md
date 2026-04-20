@@ -42,6 +42,7 @@ Part 1 focuses on building the foundational website structure and content:
 - `contact.html` - Contact information
 - `policies.html` - Policies and terms
 - `Previousevents.html` - Past events
+  Web part 1/Images/Sitemap.png
   
 
 
