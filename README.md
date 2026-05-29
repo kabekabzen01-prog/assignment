@@ -72,7 +72,8 @@ Part 2 focuses on styling the website and making it responsive:
 - `Images/` — Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
-
+![alt text](Images/phone.jpg)
+![alt text](Images/Tablet.jpg)
 ---
 
 ## Changelog
