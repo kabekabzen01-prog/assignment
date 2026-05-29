@@ -1,12 +1,7 @@
-/* =============================================
-   Mo'PLK Events Co. — Stylesheet
-   ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
 
-/* =============================================
-   CSS Variables (Base Style)
-   ============================================= */
+/*---------------------------------CSS Variables (Base Style)------------------------ */
 :root {
     --font-body:    'Lato', sans-serif;
     --font-heading: 'Playfair Display', serif;
