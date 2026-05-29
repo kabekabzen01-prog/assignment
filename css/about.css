@@ -1,11 +1,11 @@
 /* =============================================
-   Mo'PLK Events Co. — Stylesheet
+   Mo'PLK Events Co. - Stylesheet
    ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
 
 /* =============================================
-   CSS Variables (Base Style)
+   CSS Variables 
    ============================================= */
 :root {
     --font-body:    'Lato', sans-serif;
@@ -38,7 +38,7 @@
 }
 
 /* =============================================
-   Base / Body Styles
+   Body Styles
    ============================================= */
 body {
     font-family: var(--font-body);
@@ -129,7 +129,7 @@ header hr {
 
 .nav-title {
     font-family: var(--font-heading);
-    font-size: 2.5rem;        /* relative unit */
+    font-size: 2.5rem;        
     font-weight: 700;
     letter-spacing: 0.02em;
 }
@@ -182,6 +182,67 @@ header hr {
 .founder + h3 {
     text-align: center;
     margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.history-card {
+    background-color: var(--color-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.history-card h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.team-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    display: block;
+    margin: 0.5rem auto 1.5rem;
+    max-width: 28rem;
+    color: var(--color-surface);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.team-card {
+    background-color: var(--color-card);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.team-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.team-card p {
+    color: var(--color-text-muted);
+}
+
+.service-section {
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 /* =============================================
@@ -254,7 +315,7 @@ Footer {
 }
 
 .footer-column h3 {
-    font-size: 1.1rem;       /* rem unit */
+    font-size: 1.1rem;       
     margin-bottom: 0.4rem;
     color: var(--color-text);
 }
@@ -298,7 +359,7 @@ Footer {
 }
 
 /* =============================================
-   Responsive — Tablet (max-width: 900px)
+   Responsive - Tablet
    ============================================= */
 @media (max-width: 900px) {
     .nav-title {
@@ -309,7 +370,7 @@ Footer {
         font-size: 1.5rem;
     }
 
-    /* Switch events grid to 2 columns */
+    
     .events-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -324,10 +385,10 @@ Footer {
 }
 
 /* =============================================
-   Responsive — Mobile (max-width: 600px)
+   Responsive - Mobile
    ============================================= */
 @media (max-width: 600px) {
-    /* Stack nav vertically */
+    
     #nav-list {
         flex-direction: column;
         gap: 0.5rem;
@@ -346,7 +407,7 @@ Footer {
         font-size: 1.3rem;
     }
 
-    /* Single column on mobile */
+    
     .events-grid {
         grid-template-columns: 1fr;
     }
