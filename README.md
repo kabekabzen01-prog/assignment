@@ -104,18 +104,18 @@ Flux Academy, 2025. *Figma tutorial for beginners (13-min crash course)*. [video
 
 Font Awesome, 2024. *Font Awesome free icons*. [online] Available at: <https://fontawesome.com> [Accessed 28 May 2026].
 
-Google Fonts, 2024. *Lato*. [online] Available at: <https://fonts.google.com/specimen/Lato> [Accessed 28 May 2026].
+Google Fonts, 2024. *Lato*. [online] Available at: <https://fonts.google.com/specimen/Lato> [Accessed 27 May 2026].
 
 Google Fonts, 2024. *Playfair Display*. [online] Available at: <https://fonts.google.com/specimen/Playfair+Display> [Accessed 28 May 2026].
 
 Lyyti, 2025. *Event marketing KPIs: metrics you need to track*. [online] Available at: <https://www.lyyti.com/en/blog/event-marketing-kpis-metrics-you-need-to-track> [Accessed 13 April 2026].
 
-Mozilla Developer Network, 2024. *CSS grid layout*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout> [Accessed 28 May 2026].
+Mozilla Developer Network, 2024. *CSS grid layout*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout> [Accessed 26 May 2026].
 
-Mozilla Developer Network, 2024. *Flexbox*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox> [Accessed 28 May 2026].
+Mozilla Developer Network, 2024. *Flexbox*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox> [Accessed 26 May 2026].
 
-Mozilla Developer Network, 2024. *Responsive design*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design> [Accessed 28 May 2026].
+Mozilla Developer Network, 2024. *Responsive design*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design> [Accessed 27 May 2026].
 
-Mozilla Developer Network, 2024. *Using CSS custom properties (variables)*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties> [Accessed 28 May 2026].
+Mozilla Developer Network, 2024. *Using CSS custom properties (variables)*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties> [Accessed 27 May 2026].
 
 Slickplan, 2023. *What is a sitemap? let's break it down simply*. [video online] Available at: <https://www.youtube.com/watch?v=GjEIuy9s4is> [Accessed 16 April 2026].
