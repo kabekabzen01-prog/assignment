@@ -1,12 +1,7 @@
-/* =============================================
-   Mo'PLK Events Co. - Stylesheet
-   ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700/&display=swap');
 
-/* =============================================
-   CSS Variables 
-   ============================================= */
+/*---------------------------------CSS Variables (Base Style)------------------------ */
 :root {
     --font-body:    'Lato', sans-serif;
     --font-heading: 'Playfair Display', serif;
@@ -28,32 +23,32 @@
     --transition-fast: 0.25s ease;
 }
 
-/* =============================================
+/* --------------------------------------------
    CSS Reset
-   ============================================= */
+   -------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =============================================
+/* --------------------------------------------
    Body Styles
-   ============================================= */
+   --------------------------------------------  */
 body {
     font-family: var(--font-body);
-    font-size: 1rem;          /* 16px base using rem */
+    font-size: 1rem;      /* 16px base using rem */       
     line-height: 1.6;
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
-/* =============================================
+/* -------------------------------------------- 
    Typography
    ============================================= */
 h2 {
     font-family: var(--font-heading);
-    font-size: 1.75rem;       /* ~28px */
+    font-size: 1.75rem;       
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: 0.02em;
@@ -61,7 +56,7 @@ h2 {
 
 h3 {
     font-family: var(--font-heading);
-    font-size: 1.25rem;       /* ~20px */
+    font-size: 1.25rem;       
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: 0.01em;
