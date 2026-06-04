@@ -43,7 +43,7 @@ Part 1 focuses on building the foundational website structure and content:
 
 ---
 
-## Part 2 — CSS Styling and Responsive Design
+## Part 2 - CSS Styling and Responsive Design
 
 Part 2 focuses on styling the website and making it responsive:
 
