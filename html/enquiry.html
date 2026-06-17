@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- Catering Enquiry Page for Mo'PLK Events Co. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Trevor kabe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a catering quote from Mo'PLK Events Co. Tell us about your event and get an instant estimated cost and availability check.">
+    <title>Catering Enquiry | Mo'PLK Events Co.</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header id="top">
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="nav-brand">
+                    <a href="index.html">
+                        <img src="../Images/logo-navbar.png" alt="Mo'PLK Events Co. logo" class="nav-logo">
+                    </a>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="policies.html">Policy</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main class="enquiry-main">
+        <div class="form-page-header">
+            <h1>Request Catering</h1>
+            <p>Tell us about your event and we'll give you an instant estimate and availability check.</p>
+        </div>
+
+        <section class="form-container">
+            <form id="enquiry-form" novalidate>
+
+                <div class="form-group">
+                    <label for="event-type">Event Type <span class="required">*</span></label>
+                    <select id="event-type" name="event-type" required>
+                        <option value="">-- Please select --</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Traditional">Traditional Event</option>
+                        <option value="Sporting">Sporting Event</option>
+                        <option value="Baby Shower">Baby Shower</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error-message" id="event-type-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-count">Number of Guests <span class="required">*</span></label>
+                    <input type="number" id="guest-count" name="guest-count" required min="10" max="1000" placeholder="e.g. 80">
+                    <span class="error-message" id="guest-count-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Preferred Event Date <span class="required">*</span></label>
+                    <input type="date" id="event-date" name="event-date" required>
+                    <span class="error-message" id="event-date-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-firstname">First Name <span class="required">*</span></label>
+                    <input type="text" id="enquiry-firstname" name="enquiry-firstname" required minlength="2" maxlength="40">
+                    <span class="error-message" id="enquiry-firstname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-lastname">Last Name <span class="required">*</span></label>
+                    <input type="text" id="enquiry-lastname" name="enquiry-lastname" required minlength="2" maxlength="40">
+                    <span class="error-message" id="enquiry-lastname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="enquiry-email" name="enquiry-email" required placeholder="e.g. you@example.com">
+                    <span class="error-message" id="enquiry-email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="enquiry-phone" name="enquiry-phone" required pattern="^[0-9+\s\-]{7,15}$" placeholder="e.g. 082 123 4567">
+                    <span class="error-message" id="enquiry-phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details</label>
+                    <textarea id="details" name="details" maxlength="500" placeholder="Dietary requirements, venue, theme, etc."></textarea>
+                    <span class="error-message" id="details-error"></span>
+                </div>
+
+                <button type="submit" class="return-btn" id="enquiry-submit-btn">Get Estimate</button>
+
+                <div class="form-status" id="enquiry-status" role="status" aria-live="polite"></div>
+
+                <div class="enquiry-result" id="enquiry-result" hidden>
+                    <h3>Your Estimate</h3>
+                    <p id="result-availability"></p>
+                    <p id="result-cost"></p>
+                    <p class="result-note">This is an instant estimate. A member of our team will confirm final pricing and availability by email within 24 hours.</p>
+                </div>
+
+            </form>
+        </section>
+
+        <div class="back-home-container">
+            <a href="index.html" class="return-btn">Back home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <a class="footer-link" href="index.html">Home</a>
+                <a class="footer-link" href="About.html">About</a>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a class="footer-link" href="Previousevents.html">Previous Event</a>
+                <a class="footer-link" href="enquiry.html">Request Catering</a>
+                <a class="footer-link" href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <i class="fa-brands fa-facebook" style="color: rgb(30, 48, 80);"></i>
+                <i class="fa-brands fa-instagram" style="color: rgb(30, 48, 80);"></i>
+                <i class="fa-brands fa-twitter" style="color: rgb(30, 48, 80);"></i>
+                <i class="fa-brands fa-x-twitter" style="color: rgb(30, 48, 80);"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Mo'PLK Events Co. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../js/form-validation.js"></script>
+</body>
+</html>

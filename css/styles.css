@@ -1,31 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
 
-/*---------------------------------CSS Variables (Base Style)------------------------ */
+/* =============================================
+   CSS Variables (Base Style)
+   ============================================= */
 :root {
     --font-body:    'Lato', sans-serif;
     --font-heading: 'Playfair Display', serif;
     --max-width:    1200px;
 
-    --color-background:   #7c687b;
-    --color-surface:      #ffffff;
-    --color-surface-muted:#e8e8e8;
-    --color-panel:        #d3d3d3;
-    --color-card:         #ffffff;
-    --color-text:         #333333;
-    --color-text-muted:   #666666;
-    --color-accent:       #2b82e7;
-    --color-button:       #333333;
-    --color-button-hover: #000000;
-    --color-circle:       #9db4b8;
+    --color-background:    #7c687b;
+    --color-surface:       #ffffff;
+    --color-surface-muted: #e8e8e8;
+    --color-panel:         #d3d3d3;
+    --color-card:          #ffffff;
+    --color-text:          #333333;
+    --color-text-muted:    #666666;
+    --color-accent:        #2b82e7;
+    --color-button:        #333333;
+    --color-button-hover:  #000000;
+    --color-circle:        #9db4b8;
+    --color-error:         #c0392b;
+    --color-success:       #1e7e34;
 
+    --nav-logo-width: 9rem;
     --radius-base:    0.375rem;
     --transition-fast: 0.25s ease;
 }
 
-/*----------------------------------------------
+/* =============================================
    CSS Reset
-   -------------------------------------------- */
+   ============================================= */
 * {
     margin: 0;
     padding: 0;
@@ -37,10 +41,15 @@
    ============================================= */
 body {
     font-family: var(--font-body);
-    font-size: 1rem;          /* 16px base using rem */
+    font-size: 1rem;
     line-height: 1.6;
     background-color: var(--color-background);
     color: var(--color-text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* =============================================
@@ -48,7 +57,7 @@ body {
    ============================================= */
 h2 {
     font-family: var(--font-heading);
-    font-size: 1.75rem;       /* ~28px */
+    font-size: 1.75rem;
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: 0.02em;
@@ -56,7 +65,7 @@ h2 {
 
 h3 {
     font-family: var(--font-heading);
-    font-size: 1.25rem;       /* ~20px */
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: 0.01em;
@@ -68,13 +77,8 @@ p {
     letter-spacing: 0.01em;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 /* =============================================
-   Header & Navigation
+   Header & Navigation (shared across all pages)
    ============================================= */
 header {
     background-color: var(--color-panel);
@@ -94,7 +98,7 @@ header hr {
     margin: 0 auto;
 }
 
-/* Center brand title */
+/* Center brand logo */
 #nav-list li:nth-child(3) {
     flex: 1;
     text-align: center;
@@ -107,16 +111,10 @@ header hr {
 }
 
 .nav-logo {
-    width: 15rem;
+    width: var(--nav-logo-width);
     height: auto;
     display: block;
-}
-
-.nav-title {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;        /* relative unit */
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    margin: 0 auto;
 }
 
 #nav-list a {
@@ -128,7 +126,6 @@ header hr {
     transition: background-color var(--transition-fast);
 }
 
-/* Pseudo-classes: hover, focus, active */
 #nav-list a:hover {
     text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.06);
@@ -144,7 +141,7 @@ header hr {
 }
 
 /* =============================================
-   Main Container
+   Main Container (shared)
    ============================================= */
 main {
     max-width: var(--max-width);
@@ -153,19 +150,10 @@ main {
 }
 
 /* =============================================
-   Hero Image
+   Buttons (shared: .btn and .return-btn)
    ============================================= */
-.hero-image {
-    width: 100%;             
-    height: 30rem;           
-    object-fit: cover;
-    display: block;
-}
-
-/* =============================================
-   Buttons & Links (.btn)
-   ============================================= */
-.btn {
+.btn,
+.return-btn {
     display: inline-block;
     background-color: var(--color-button);
     color: var(--color-surface);
@@ -175,14 +163,27 @@ main {
     font-size: 0.9rem;
     margin-top: 1rem;
     border: 2px solid var(--color-button);
-    transition: background-color var(--transition-fast),
-    color var(--transition-fast);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.return-btn:hover {
     background-color: var(--color-button-hover);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn:focus,
+.return-btn:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.btn:active,
+.return-btn:active {
+    transform: scale(0.98);
+    box-shadow: none;
 }
 
 .hero-action {
@@ -190,17 +191,7 @@ main {
     margin: 1.5rem auto;
 }
 
-.btn:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 3px;
-}
-
-.btn:active {
-    transform: scale(0.98);
-    box-shadow: none;
-}
-
-/* Match the Request Catering CTA from previous events page */
+/* Orange catering CTA variant */
 .catering-cta {
     display: inline-flex;
     align-items: center;
@@ -219,12 +210,87 @@ main {
 
 .catering-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 36px rgba(85, 84, 84, 0.15);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
 }
 
 /* =============================================
-   What We Offer
+   Footer (shared across all pages)
    ============================================= */
+footer,
+Footer {
+    background-color: var(--color-card);
+    border: 3px solid var(--color-accent);
+    padding: 2rem;
+    margin: 2rem 1rem 1rem;
+    box-shadow: 0 4px 12px rgba(43, 130, 231, 0.15);
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-text);
+}
+
+.footer-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
+}
+
+.footer-link:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.footer-column i {
+    font-size: 1.4rem;
+    margin-right: 0.6rem;
+    cursor: pointer;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer-column i:hover {
+    opacity: 0.7;
+    transform: scale(1.15);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* =============================================
+   PAGE: Home (index.html)
+   ============================================= */
+.hero-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    display: block;
+}
+
 .what-we-offer {
     background-color: var(--color-surface);
     padding: 2.5rem 1rem;
@@ -236,9 +302,6 @@ main {
     margin-top: 0.5rem;
 }
 
-/* =============================================
-   Events Section
-   ============================================= */
 #events-section {
     background-color: var(--color-panel);
     padding: 2.5rem 1rem;
@@ -249,7 +312,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* 3-column grid layout */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -264,8 +326,7 @@ main {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: box-shadow var(--transition-fast),
-                transform var(--transition-fast);
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .event-card:hover {
@@ -300,9 +361,6 @@ main {
     margin-top: 0.5rem;
 }
 
-/* =============================================
-   Sections (Mission & CTA)
-   ============================================= */
 section {
     background-color: var(--color-surface-muted);
     padding: 2.5rem 1.5rem;
@@ -312,12 +370,9 @@ section {
 section p {
     color: var(--color-text-muted);
     margin: 1rem auto;
-    max-width: 37.5rem;      /* rem unit */
+    max-width: 37.5rem;
 }
 
-/* =============================================
-   Who We Are
-   ============================================= */
 .who-we-are {
     background-color: var(--color-card);
     padding: 2.5rem 1.5rem;
@@ -331,106 +386,433 @@ section p {
 }
 
 /* =============================================
-   Footer
+   PAGE: About (About.html)
    ============================================= */
-footer,
-Footer {
-    background-color: var(--color-card);
-    border: 3px solid var(--color-accent);
-    padding: 2rem;
-    margin: 2rem 1rem 1rem;
-    box-shadow: 0 4px 12px rgba(43, 130, 231, 0.15);
+.about-header {
+    text-align: center;
 }
 
-.footer-inner {
+#Images {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.founder {
+    display: block;
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.founder + h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.events-gallery {
+    margin-bottom: 2.5rem;
+}
+
+.history-card {
+    background-color: var(--color-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.history-card h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.history-card p {
+    font-size: 1.1rem;
+}
+
+.team-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.team-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    display: block;
+    margin: 0.5rem auto 1.5rem;
+    max-width: 28rem;
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer-column h3 {
-    font-size: 1.1rem;       
-    margin-bottom: 0.4rem;
-    color: var(--color-text);
-}
-
-.footer-link {
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color var(--transition-fast);
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-    color: var(--color-accent);
-}
-
-.footer-link:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
-}
-
-/* Social Media Icons */
-.footer-column i {
-    font-size: 1.4rem;
-    margin-right: 0.6rem;
-    cursor: pointer;
-    transition: opacity var(--transition-fast),
-                transform var(--transition-fast);
-}
-
-.footer-column i:hover {
-    opacity: 0.7;
-    transform: scale(1.15);
-}
-
-.footer-bottom {
+.team-card {
+    background-color: var(--color-card);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     text-align: center;
-    margin-top: 1.5rem;
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.team-card p {
+    color: var(--color-text-muted);
+}
+
+.service-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* =============================================
+   PAGE: Contact (contact.html) & Enquiry (enquiry.html)
+   ============================================= */
+.contact-page-header,
+.form-page-header {
+    text-align: center;
+    padding: 2rem 1rem 0;
+}
+
+.contact-header,
+.form-page-header {
+    text-align: center;
+}
+
+.contact-header .subtitle,
+.form-page-header p {
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+}
+
+.contact-details {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.contact-info,
+.contact-phone {
+    margin-top: 0.75rem;
+}
+
+.message-form,
+.form-container {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-card);
+    border-radius: var(--radius-base);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.form-note {
+    color: var(--color-text-muted);
     font-size: 0.85rem;
-    color: #555;
+    margin-bottom: 1rem;
+}
+
+.contact-form,
+#contact-form,
+#enquiry-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.required {
+    color: var(--color-error);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="number"],
+.contact-form input[type="date"],
+.contact-form select,
+.contact-form textarea,
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius-base);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+}
+
+.contact-form textarea,
+.form-group textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(43, 130, 231, 0.15);
+}
+
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+    border-color: var(--color-error);
+}
+
+.error-message {
+    color: var(--color-error);
+    font-size: 0.8rem;
+    min-height: 1rem;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.form-status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: var(--radius-base);
+}
+
+.form-status.success {
+    background-color: #e6f4ea;
+    color: var(--color-success);
+}
+
+.form-status.error {
+    background-color: #fdecea;
+    color: var(--color-error);
+}
+
+.enquiry-result {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-surface-muted);
+    border-radius: var(--radius-base);
+    border-left: 4px solid var(--color-accent);
+}
+
+.enquiry-result h3 {
+    margin-bottom: 0.75rem;
+}
+
+.enquiry-result p {
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.result-note {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: 0.75rem;
+}
+
+.available { color: var(--color-success); }
+.unavailable { color: var(--color-error); }
+
+.back-home-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* =============================================
+   PAGE: Policies (policies.html)
+   ============================================= */
+.policies-main {
+    padding: 2rem 1rem;
+}
+
+.policies-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.policies-subtitle {
+    color: var(--color-text);
+    margin-top: 0.75rem;
+}
+
+.policy-item {
+    background-color: var(--color-card);
+    padding: 1.75rem;
+    border-radius: var(--radius-base);
+    margin: 0 1rem 1.25rem;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.policy-item h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.return-home {
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/* =============================================
+   PAGE: Previous Events (Previousevents.html)
+   ============================================= */
+.page-header {
+    text-align: center;
+    padding: 3.5rem 1rem 2rem;
+}
+
+.page-header h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
+}
+
+.page-subtitle {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.02em;
+}
+
+/* Renamed from .event-card to avoid collision with the home page's
+   event-type cards, which use a different visual style. */
+.past-event-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin: 0 1rem 1.5rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.event-thumbnail {
+    overflow: hidden;
+    border-radius: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.event-thumbnail img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    display: block;
+}
+
+.events-cta {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.events-cta h2 {
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: grid;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.cta-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16rem;
+    padding: 1.15rem 2.25rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.cta-buttons a:first-child {
+    background-color: #f28c1f;
+    color: #111;
+}
+
+.cta-buttons a:last-child {
+    background-color: #222;
+    color: #fff;
+}
+
+.cta-buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
 }
 
 /* =============================================
    Responsive — Tablet (max-width: 900px)
    ============================================= */
 @media (max-width: 900px) {
-    .nav-title {
-        font-size: 2rem;
-    }
+    h2 { font-size: 1.5rem; }
 
-    h2 {
-        font-size: 1.5rem;
-    }
+    .nav-logo { width: 7rem; }
 
-    /* Switch events grid to 2 columns */
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .events-grid { grid-template-columns: repeat(2, 1fr); }
 
-    .hero-image {
-        height: 22rem;
-    }
+    .hero-image { height: 22rem; }
 
-    .footer-inner {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .footer-inner { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* =============================================
    Responsive — Mobile (max-width: 600px)
    ============================================= */
 @media (max-width: 600px) {
-    /* Stack nav vertically */
     #nav-list {
         flex-direction: column;
         gap: 0.5rem;
@@ -441,33 +823,23 @@ Footer {
         flex: none;
     }
 
-    .nav-title {
-        font-size: 1.5rem;
-    }
+    .nav-logo { width: 6rem; }
 
-    h2 {
-        font-size: 1.3rem;
-    }
+    h2 { font-size: 1.3rem; }
 
-    /* Single column on mobile */
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
+    .events-grid { grid-template-columns: 1fr; }
 
-    .hero-image {
-        height: 14rem;
-    }
+    .hero-image { height: 14rem; }
 
-    .footer-inner {
-        grid-template-columns: 1fr;
-    }
+    .footer-inner { grid-template-columns: 1fr; }
 
     section,
     .who-we-are {
         padding: 1.5rem 1rem;
     }
 
-    .btn {
+    .btn,
+    .return-btn {
         width: 100%;
         text-align: center;
     }
