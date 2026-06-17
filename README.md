@@ -34,7 +34,7 @@ This website is a responsive, multi-page informational site built as part of a w
 
 ---
 
-## Part 1 — Building the Foundation
+## Part 1 - Building the Foundation
 
 Part 1 focuses on building the foundational website structure and content:
 
@@ -65,7 +65,7 @@ Part 2 focuses on styling the website and making it responsive:
 
 ---
 
-## Part 3 — Enhancing Functionality and SEO
+## Part 3 - Enhancing Functionality and SEO
 
 Part 3 focuses on JavaScript functionality, forms, and search engine optimisation:
 
@@ -81,15 +81,15 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 
 ## Sitemap
 
-- `index.html` — Home page
-- `About.html` — About the organisation
-- `contact.html` — Contact information
-- `enquiry.html` — Catering quote request form
-- `policies.html` — Policies and terms
-- `Previousevents.html` — Past events
-- `css/styles.css` — Single external stylesheet (linked to all pages)
-- `js/form-validation.js` — Shared form validation and submission logic
-- `Images/` — Folder containing all site images
+- `index.html` - Home page
+- `About.html` - About the organisation
+- `contact.html` - Contact information
+- `enquiry.html` - Catering quote request form
+- `policies.html` - Policies and terms
+- `Previousevents.html` - Past events
+- `css/styles.css` - Single external stylesheet (linked to all pages)
+- `js/form-validation.js` - Shared form validation and submission logic
+- `Images/` - Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
 ![alt text](Images/Tablet.jpg)
