@@ -100,7 +100,7 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 - `js/map.js` - Interactive Leaflet map on the Contact page
 - `robots.txt` - Search engine crawler instructions
 - `sitemap.xml` - List of all pages for search engines
-- `index.html` (root) — Redirects to `html/index.html` for hosting compatibility
+- `index.html` (root) - Redirects to `html/index.html` for hosting compatibility
 - `Images/` - Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
