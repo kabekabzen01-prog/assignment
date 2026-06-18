@@ -7,6 +7,7 @@
     <meta name="author" content="Trevor kabe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mo'PLK Events Co. is a South African catering company specialising in weddings, traditional events, baby showers, graduations, and corporate functions in Polokwane.">
+    <meta name="keywords" content="catering Polokwane, event catering South Africa, wedding catering, traditional event catering, baby shower catering, conference catering, graduation catering, Mo'PLK Events Co.">
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Mo'PLK Events Co. | Catering for Weddings &amp; Events in Polokwane</title>
@@ -58,10 +59,18 @@
     <!-- Event Types -->
     <article id="events-section">
         <h2>Events</h2>
-        <div class="events-grid">
+
+        <div class="events-filter">
+            <label for="event-search" class="visually-hidden">Search events</label>
+            <input type="text" id="event-search" placeholder="Search events (e.g. Wedding)..." aria-label="Search events">
+            <button type="button" id="sort-events-btn" class="filter-btn">Sort A&ndash;Z</button>
+        </div>
+        <p class="no-results" id="no-results-message" hidden>No events match your search.</p>
+
+        <div class="events-grid" id="events-grid">
             <div class="event-card">
                 <div class="event-image">
-                    <img src="../Images/Weddingevent.jpg" alt="Wedding catering setup by Mo'PLK Events Co.">
+                <img src="../Images/Weddingevent.jpg" alt="Wedding catering setup by Mo'PLK Events Co.">
                 </div>
                 <h3>Wedding Events</h3>
             </div>
@@ -130,7 +139,7 @@
     </main>
 
 <!-- Footer-->
-<footer>
+<Footer>
     <!-- Footer Navigation and Links-->
     <div class="footer-inner">
         <div class="footer-column">
@@ -156,6 +165,8 @@
     <div class="footer-bottom">
         &copy; 2026 Mo'PLK Events Co. All rights reserved.
     </div>
-</footer>
+</Footer>
+
+<script src="../js/interactive.js"></script>
 </body>
 </html>

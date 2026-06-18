@@ -5,6 +5,7 @@
     <meta name="author" content="Trevor kabe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Read the costs, validity, and cancellation policies for booking catering services with Mo'PLK Events Co.">
+    <meta name="keywords" content="catering policies, booking terms, cancellation policy, catering costs South Africa, catering deposit">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Policies | Mo'PLK Events Co.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -36,27 +37,42 @@
     </section>
 
     <section class="policy-item">
-        <h2>Costs</h2>
-        <p>Our catering quotes are always based on the number of guests, the menu you select, and the type of event you're planning. To secure your booking, we require a 30% non-refundable deposit upfront. The rest of the balance needs to be settled at least 7 days before the event.</p>
-        <p>Just a heads-up that prices can sometimes change depending on ingredient availability and how far we have to travel to your venue. Any extra guests or menu adjustments made after we have confirmed the booking may also affect the final cost.</p>
+        <button class="accordion-header" aria-expanded="true" aria-controls="costs-content">
+            <h2>Costs</h2>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="costs-content">
+            <p>Our catering quotes are always based on the number of guests, the menu you select, and the type of event you're planning. To secure your booking, we require a 30% non-refundable deposit upfront. The rest of the balance needs to be settled at least 7 days before the event.</p>
+            <p>Just a heads-up that prices can sometimes change depending on ingredient availability and how far we have to travel to your venue. Any extra guests or menu adjustments made after we have confirmed the booking may also affect the final cost.</p>
+        </div>
     </section>
 
     <section class="policy-item">
-        <h2>Validity</h2>
-        <p>All quotes from Mo'PLK Events Co. are valid for 14 days from the date we send them. After that, prices may need to be adjusted if supplier costs or availability change. Your booking is only officially confirmed once we have received the deposit and sent you a confirmation email. Please note that we reserve the right to decline any booking if needed.
-        </p>
+        <button class="accordion-header" aria-expanded="false" aria-controls="validity-content">
+            <h2>Validity</h2>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="validity-content">
+            <p>All quotes from Mo'PLK Events Co. are valid for 14 days from the date we send them. After that, prices may need to be adjusted if supplier costs or availability change. Your booking is only officially confirmed once we have received the deposit and sent you a confirmation email. Please note that we reserve the right to decline any booking if needed.
+            </p>
+        </div>
     </section>
 
     <section class="policy-item">
-        <h2>Cancellation</h2>
-       <p>If you need to cancel your booking, please let us know in writing as soon as possible.</p>
-<p>Here is how our cancellation policy works:</p>
-<ul>
-    <li>Cancellations made more than 14 days before the event will only forfeit the deposit.</li>
-    <li>Cancellations made between 7 and 14 days before the event will be charged 50% of the total booking amount.</li>
-    <li>Cancellations made less than 7 days before the event will be charged the full amount.</li>
-</ul>
-<p>Please note that Mo'PLK Events Co. reserves the right to cancel a booking due to unforeseen circumstances, in which case we will issue a full refund.</p>
+        <button class="accordion-header" aria-expanded="false" aria-controls="cancellation-content">
+            <h2>Cancellation</h2>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="cancellation-content">
+            <p>If you need to cancel your booking, please let us know in writing as soon as possible.</p>
+            <p>Here is how our cancellation policy works:</p>
+            <ul>
+                <li>Cancellations made more than 14 days before the event will only forfeit the deposit.</li>
+                <li>Cancellations made between 7 and 14 days before the event will be charged 50% of the total booking amount.</li>
+                <li>Cancellations made less than 7 days before the event will be charged the full amount.</li>
+            </ul>
+            <p>Please note that Mo'PLK Events Co. reserves the right to cancel a booking due to unforeseen circumstances, in which case we will issue a full refund.</p>
+        </div>
     </section>
 
     <div class="return-home">
@@ -91,5 +107,7 @@
         &copy; 2026 Mo'PLK Events Co. All rights reserved.
     </div>
 </footer>
+
+<script src="../js/interactive.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ This website is a responsive, multi-page informational site built as part of a w
 
 ---
 
-## Part 1 - Building the Foundation
+## Part 1 — Building the Foundation
 
 Part 1 focuses on building the foundational website structure and content:
 
@@ -65,7 +65,7 @@ Part 2 focuses on styling the website and making it responsive:
 
 ---
 
-## Part 3 - Enhancing Functionality and SEO
+## Part 3 — Enhancing Functionality and SEO
 
 Part 3 focuses on JavaScript functionality, forms, and search engine optimisation:
 
@@ -76,20 +76,32 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 - **JavaScript validation (`js/form-validation.js`):** validates all fields on blur and live while typing, with field-specific inline error messages. Submission is blocked until all fields pass.
 - **Dynamic response on the enquiry form:** after validation, JavaScript calculates an estimated cost (guests × rate for the selected event type) and checks the requested date against a list of already-booked dates, displaying the result instantly via DOM manipulation — no page reload.
 - **AJAX submission on the contact form:** uses the Fetch API to submit form data asynchronously, with a success/error message shown inline.
+- **Accordion (interactive element):** the Policies page now uses a collapsible accordion — clicking a heading expands or collapses its content, with the panel height animated via JavaScript and accessible `aria-expanded` attributes.
+- **Lightbox gallery (interactive element):** clicking any photo on the Previous Events page opens it full-size in an overlay, closable via the close button, clicking outside the image, or the Escape key.
+- **Search and sort (dynamic content):** the Events section on the home page includes a live search box that filters event cards by name as you type, plus a "Sort A–Z" button that reorders the cards alphabetically and can be reset back to the original order.
+- **SEO — on-page:** descriptive `<title>` and `<meta name="description">` tags added to every page; `<meta name="keywords">` added to every page targeting relevant catering/location terms; all images use descriptive, keyword-relevant `alt` text and were renamed from generic names (e.g. `webpage.jpg`) to descriptive ones (e.g. `team-member-1.jpg`, `wedding-event-catering.jpg`); heading tags (`h1`, `h2`, `h3`) used in a logical structure on every page; internal links connect every page to every other relevant page.
+- **Interactive map:** added a Google Map to the Contact page showing the business location in Polokwane, with a marker and info window. Requires a Google Maps JavaScript API key (see setup note in `js/map.js`).
+- **SEO — technical:** added `robots.txt` to allow search engine crawling, and `sitemap.xml` listing all pages for search engines.
+- **Deployment:** added a root-level redirect `index.html` so the site works correctly when hosted on Netlify or GitHub Pages (the real homepage lives in `html/index.html`).
 
 ---
 
 ## Sitemap
 
-- `index.html` - Home page
-- `About.html` - About the organisation
-- `contact.html` - Contact information
-- `enquiry.html` - Catering quote request form
-- `policies.html` - Policies and terms
-- `Previousevents.html` - Past events
-- `css/styles.css` - Single external stylesheet (linked to all pages)
-- `js/form-validation.js` - Shared form validation and submission logic
-- `Images/` - Folder containing all site images
+- `index.html` — Home page
+- `About.html` — About the organisation
+- `contact.html` — Contact information
+- `enquiry.html` — Catering quote request form
+- `policies.html` — Policies and terms
+- `Previousevents.html` — Past events
+- `css/styles.css` — Single external stylesheet (linked to all pages)
+- `js/form-validation.js` — Shared form validation and submission logic
+- `js/interactive.js` — Accordion, lightbox gallery, and events search/sort logic
+- `js/map.js` — Interactive Leaflet map on the Contact page
+- `robots.txt` — Search engine crawler instructions
+- `sitemap.xml` — List of all pages for search engines
+- `index.html` (root) — Redirects to `html/index.html` for hosting compatibility
+- `Images/` — Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
 ![alt text](Images/Tablet.jpg)
@@ -121,7 +133,16 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 | 2026-06-15 | Part 3: Created `js/form-validation.js` with field-level validation, inline error messages, and live re-validation on input |
 | 2026-06-15 | Part 3: Implemented AJAX submission (Fetch API) on the contact form |
 | 2026-06-15 | Part 3: Implemented dynamic cost estimate and date-availability check on the enquiry form using DOM manipulation |
-| 2026-06-15 | Part 3: Added "Enquiry" link to the navigation and footer on every page |
+| 2026-06-17 | Part 3: Converted Policies page into an accessible accordion (`aria-expanded`, animated height) |
+| 2026-06-17 | Part 3: Added a lightbox gallery to the Previous Events page (click to enlarge, close via button/Escape/click-outside) |
+| 2026-06-17 | Part 3: Added live search and "Sort A–Z" functionality to the home page events grid |
+| 2026-06-17 | Part 3: Added `<title>` and `<meta name="description">` tags to every page, and descriptive `alt` text to every image, for on-page SEO |
+| 2026-06-17 | Part 3: Added `robots.txt` and `sitemap.xml` for technical SEO |
+| 2026-06-17 | Part 3: Added a root-level redirect `index.html` so the site resolves correctly when deployed, since the real homepage lives in `html/index.html` |
+| 2026-06-17 | Part 3: Deployed the site (see live link in submission) |
+| 2026-06-18 | Part 3 (Part 2 feedback): Renamed generic image files (`webpage.jpg`, `Eventpicture.jpg`, etc.) to descriptive, SEO-friendly names (`team-member-1.jpg`, `wedding-event-catering.jpg`, etc.) and updated all references |
+| 2026-06-18 | Part 3: Added `<meta name="keywords">` tags to every page |
+| 2026-06-18 | Part 3: Added an interactive Google Map to the Contact page showing the business location, with a marker and info window |
 
 ---
 
@@ -140,6 +161,12 @@ Formspree, 2024. *Formspree: form backend for static sites*. [online] Available 
 Google Fonts, 2024. *Lato*. [online] Available at: <https://fonts.google.com/specimen/Lato> [Accessed 27 May 2026].
 
 Google Fonts, 2024. *Playfair Display*. [online] Available at: <https://fonts.google.com/specimen/Playfair+Display> [Accessed 28 May 2026].
+
+Google Maps Platform, 2024. *Maps JavaScript API*. [online] Available at: <https://developers.google.com/maps/documentation/javascript> [Accessed 18 June 2026].
+
+Google Search Central, 2024. *Build and submit a sitemap*. [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap> [Accessed 17 June 2026].
+
+Google Search Central, 2024. *Introduction to robots.txt*. [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/robots/intro> [Accessed 17 June 2026].
 
 Lyyti, 2025. *Event marketing KPIs: metrics you need to track*. [online] Available at: <https://www.lyyti.com/en/blog/event-marketing-kpis-metrics-you-need-to-track> [Accessed 13 April 2026].
 

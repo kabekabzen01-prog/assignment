@@ -5,6 +5,7 @@
     <meta name="author" content="Trevor kabe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse photos from past events catered by Mo'PLK Events Co., including weddings, traditional ceremonies, and celebrations.">
+    <meta name="keywords" content="previous catering events, event gallery Polokwane, Mo'PLK Events Co. portfolio, catered events photos">
     <title>Previous Events | Mo'PLK Events Co.</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,14 +42,14 @@
 
             <article class="past-event-card">
                 <div class="event-thumbnail">
-                    <img src="../Images/webpage.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co.">
+                    <img src="../Images/Eventpicture.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
                 </div>
                 <h2>Picture of event</h2>
                 <p>Description of the event.</p>
             </article>
             <article class="past-event-card">
                 <div class="event-thumbnail">
-                    <img src="../Images/webpage.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co.">
+                    <img src="../Images/Weddingevent.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
                 </div>
                 <h2>Picture of event</h2>
                 <p>Description of the event.</p>
@@ -64,6 +65,12 @@
             </div>
         </section>
     </main>
+
+    <!-- Lightbox Overlay (hidden by default, shown via JS) -->
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+    </div>
 
     <!-- Footer -->
     <!-- Footer Navigation and Links -->
@@ -94,5 +101,7 @@
         </div>
 
     </footer>
+
+    <script src="../js/interactive.js"></script>
     </body>
 </html>
