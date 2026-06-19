@@ -106,8 +106,13 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 
 ![alt text](Images/Tablet.jpg)
 Tablet responsive view
+
+
 ![alt text](Images/phone.png)
 Phone responsive view
+
+
+
 ![alt text](Images/aboutpage.png)
 ![alt text](Images/contactpage.png)
 ![alt text](Images/enquirypage.png)
