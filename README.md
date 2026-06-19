@@ -1,4 +1,4 @@
-# Mo'PLK Events Co. — Web Development Project
+# Mo'PLK Events Co. - Web Development Project
 
 ## Student Information
 - **Name:** Trevor Kabe
