@@ -7,14 +7,14 @@
 ---
 
 ## Project Overview
-Mo'PLK Events Co. started as something I did with friends back in Turfloop, helping neighbours plan their events. This project turns that into a proper website — somewhere people can actually find us, see what we do, look at past events, and request a catering quote without having to phone first. It's a multi-page site covering the home page, an About page, a Contact page, a catering Enquiry page, our Policies, and a gallery of Previous Events.
+Mo'PLK Events Co. started as something I did with friends back in Turfloop, helping neighbours plan their events. This project turns that into a proper website - somewhere people can actually find us, see what we do, look at past events, and request a catering quote without having to phone first. It's a multi-page site covering the home page, an About page, a Contact page, a catering Enquiry page, our Policies, and a gallery of Previous Events.
 
 ---
 
 ## Website Goals and Objectives
 - Make it obvious within a few seconds what Mo'PLK Events Co. actually does.
 - Let people request a catering quote and get an instant estimate, instead of waiting on a phone call.
-- Keep the navigation simple — nobody should have to dig to find the Contact or Enquiry page.
+- Keep the navigation simple - nobody should have to dig to find the Contact or Enquiry page.
 - Build something I can keep adding to after the module ends, since this is a real business and not just an assignment.
 
 ---
@@ -86,7 +86,7 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 
 ## Sitemap
 
-- `index.html` — Home page
+- `index.html` - Home page
 - `About.html` - About the organisation
 - `contact.html` - Contact information
 - `enquiry.html` - Catering quote request form
@@ -102,7 +102,9 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 - `Images/` - Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
+Tablet responsive view
 ![alt text](Images/Tablet.jpg)
+Phone responsive view
 ![alt text](Images/phone.png)
 ![alt text](Images/aboutpage.png)
 ![alt text](Images/contactpage.png)
@@ -120,7 +122,7 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 |------|-------------|
 | 2026-04-14 | Created README with project overview, goals, features, part details, sitemap, and references |
 | 2026-05-25 | Part 2: Created external stylesheet `style.css` and linked it to all HTML pages |
-| 2026-05-25 | Part 2: Added base styles — font family, colour scheme, CSS reset on `body` and `*` |
+| 2026-05-25 | Part 2: Added base styles - font family, colour scheme, CSS reset on `body` and `*` |
 | 2026-05-25 | Part 2: Applied typography styles — `font-family`, `font-size` in `rem`, `line-height`, `letter-spacing` on headings |
 | 2026-05-26 | Part 2: Built navigation layout using CSS Flexbox |
 | 2026-05-26 | Part 2: Built events grid and footer layout using CSS Grid |
@@ -132,7 +134,7 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 | 2026-05-28 | Part 2: Updated README with Part 2 section, changelog entries, and corrected references |
 | 2026-06-15 | Part 3 (Part 2 feedback): Consolidated `about.css`, `contact.css`, `policies.css`, `previousevents.css`, and `styles.css` into a single shared `css/styles.css` to properly apply the cascading nature of CSS |
 | 2026-06-15 | Part 3 (Part 2 feedback): Fixed inconsistent navbar logo size across pages by introducing a `--nav-logo-width` variable |
-| 2026-06-15 | Part 3 (Part 2 feedback): Fixed a class-name collision between the home page's `.event-card` and the Previous Events page's card — renamed the latter to `.past-event-card` |
+| 2026-06-15 | Part 3 (Part 2 feedback): Fixed a class-name collision between the home page's `.event-card` and the Previous Events page's card - renamed the latter to `.past-event-card` |
 | 2026-06-15 | Part 3: Created `enquiry.html` with event type, guest count, date, and contact fields |
 | 2026-06-15 | Part 3: Added a required "type of message" field to `contact.html`, replacing the confidential-information checkbox with an optional newsletter opt-in |
 | 2026-06-15 | Part 3: Created `js/form-validation.js` with field-level validation, inline error messages, and live re-validation on input |
@@ -148,7 +150,7 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 | 2026-06-18 | Part 3 (Part 2 feedback): Renamed generic image files (`webpage.jpg`, `Eventpicture.jpg`, etc.) to descriptive, SEO-friendly names (`team-member-1.jpg`, `wedding-event-catering.jpg`, etc.) and updated all references |
 | 2026-06-18 | Part 3: Added `<meta name="keywords">` tags to every page |
 | 2026-06-18 | Part 3: Added an interactive Leaflet map to the Contact page showing the business location, with a marker and popup (uses free OpenStreetMap tiles, no API key needed) |
-| 2026-06-19 | Part 3 (bug fix): `js/Map.js` was saved with a capital "M" while every page links to `../js/map.js` (lowercase) — this works on Windows/Mac but breaks on case-sensitive hosts like GitHub Pages. Renamed the file to lowercase. |
+| 2026-06-19 | Part 3 (bug fix): `js/Map.js` was saved with a capital "M" while every page links to `../js/map.js` (lowercase) - this works on Windows/Mac but breaks on case-sensitive hosts like GitHub Pages. Renamed the file to lowercase. |
 | 2026-06-19 | Part 3 (bug fix): `styles.css` referenced a CSS variable, `--transition-smooth`, that was never defined in `:root` — replaced with the existing `--transition-fast` variable on form input focus states. |
 | 2026-06-19 | Part 3 (bug fix): `About.html` team section was accidentally pointing at the responsive-testing screenshots (`phone.png`, `Tablet.jpg`, `Sitemap.png`) used elsewhere in this README, instead of real team photos. Replaced with placeholder filenames (`team-member-1.jpg` through `team-member-4.jpg`) and improved alt text. |
 | 2026-06-19 | Part 3 (bug fix): `Previousevents.html` gallery was duplicating the hero image and the Wedding Events card image instead of having its own photos. Pointed it at dedicated placeholder filenames (`previous-event-photo-1.jpg`, `previous-event-photo-2.jpg`). |
