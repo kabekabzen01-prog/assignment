@@ -63,7 +63,7 @@ Part 2 focuses on styling the website and making it responsive:
 
 ---
 
-## Part 3 — Enhancing Functionality and SEO
+## Part 3 - Enhancing Functionality and SEO
 
 Part 3 focuses on JavaScript functionality, forms, and search engine optimisation:
 
@@ -87,19 +87,19 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 ## Sitemap
 
 - `index.html` — Home page
-- `About.html` — About the organisation
-- `contact.html` — Contact information
-- `enquiry.html` — Catering quote request form
-- `policies.html` — Policies and terms
-- `Previousevents.html` — Past events
-- `css/styles.css` — Single external stylesheet (linked to all pages)
-- `js/form-validation.js` — Shared form validation and submission logic
-- `js/interactive.js` — Accordion, lightbox gallery, and events search/sort logic
-- `js/map.js` — Interactive Leaflet map on the Contact page
-- `robots.txt` — Search engine crawler instructions
-- `sitemap.xml` — List of all pages for search engines
-- `index.html` (root) — Redirects to `html/index.html` for hosting compatibility
-- `Images/` — Folder containing all site images
+- `About.html` - About the organisation
+- `contact.html` - Contact information
+- `enquiry.html` - Catering quote request form
+- `policies.html` - Policies and terms
+- `Previousevents.html` - Past events
+- `css/styles.css` - Single external stylesheet (linked to all pages)
+- `js/form-validation.js` - Shared form validation and submission logic
+- `js/interactive.js` - Accordion, lightbox gallery, and events search/sort logic
+- `js/map.js` - Interactive Leaflet map on the Contact page
+- `robots.txt` - Search engine crawler instructions
+- `sitemap.xml` - List of all pages for search engines
+- `index.html` (root) - Redirects to `html/index.html` for hosting compatibility
+- `Images/` - Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
 ![alt text](Images/Tablet.jpg)
@@ -186,6 +186,4 @@ Mozilla Developer Network, 2024. *Using the Fetch API*. [online] Available at: <
 
 Mozilla Developer Network, 2024. *Client-side form validation*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation> [Accessed 15 June 2026].
 
-OpenStreetMap Foundation, 2024. *OpenStreetMap*. [online] Available at: <https://www.openstreetmap.org> [Accessed 18 June 2026].
-
-Slickplan, 2023. *What is a sitemap? Let's break it down simply*. [video online] Available at: <https://www.youtube.com/watch?v=GjEIuy9s4is> [Accessed 16 April 2026].
+Slickplan, 2023. *What is a sitemap? let's break it down simply*. [video online] Available at: <https://www.youtube.com/watch?v=GjEIuy9s4is> [Accessed 16 April 2026].
