@@ -102,10 +102,12 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 - `Images/` - Folder containing all site images
 
 ![Sitemap](https://github.com/user-attachments/assets/fb3e4953-e101-4e18-841b-42e78c7e2b07)
-Tablet responsive view
+
+
 ![alt text](Images/Tablet.jpg)
-Phone responsive view
+Tablet responsive view
 ![alt text](Images/phone.png)
+Phone responsive view
 ![alt text](Images/aboutpage.png)
 ![alt text](Images/contactpage.png)
 ![alt text](Images/enquirypage.png)
