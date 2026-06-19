@@ -184,8 +184,6 @@ Google Search Central, 2024. *Build and submit a sitemap*. [online] Available at
 
 Google Search Central, 2024. *Introduction to robots.txt*. [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/robots/intro> [Accessed 17 June 2026].
 
-Leaflet, 2024. *Leaflet: an open-source JavaScript library for interactive maps*. [online] Available at: <https://leafletjs.com> [Accessed 18 June 2026].
-
 Lyyti, 2025. *Event marketing KPIs: metrics you need to track*. [online] Available at: <https://www.lyyti.com/en/blog/event-marketing-kpis-metrics-you-need-to-track> [Accessed 13 April 2026].
 
 Mozilla Developer Network, 2024. *CSS grid layout*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout> [Accessed 26 May 2026].
