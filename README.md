@@ -161,7 +161,7 @@ Phone responsive view
 | 2026-06-19 | Part 3 (bug fix): `styles.css` referenced a CSS variable, `--transition-smooth`, that was never defined in `:root` — replaced with the existing `--transition-fast` variable on form input focus states. |
 | 2026-06-19 | Part 3 (bug fix): `About.html` team section was accidentally pointing at the responsive-testing screenshots (`phone.png`, `Tablet.jpg`, `Sitemap.png`) used elsewhere in this README, instead of real team photos. Replaced with placeholder filenames (`team-member-1.jpg` through `team-member-4.jpg`) and improved alt text. |
 | 2026-06-19 | Part 3 (bug fix): `Previousevents.html` gallery was duplicating the hero image and the Wedding Events card image instead of having its own photos. Pointed it at dedicated placeholder filenames (`previous-event-photo-1.jpg`, `previous-event-photo-2.jpg`). |
-| 2026-06-19 | Part 3 (bug fix): Corrected this README, which incorrectly described the Contact page map as a Google Map requiring an API key — the actual implementation uses Leaflet with free OpenStreetMap tiles. |
+| 2026-06-19 | Part 3 (bug fix): Corrected this README, which incorrectly described the Contact page map as a Google Map requiring an API key - the actual implementation uses Leaflet with free OpenStreetMap tiles. |
 | 2026-06-19 | Rewrote the Project Overview, Goals, and Key Features sections in my own words |
 
 ---
