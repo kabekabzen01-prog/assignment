@@ -32,7 +32,7 @@ Mo'PLK Events Co. started as something I did with friends back in Turfloop, help
 
 ---
 
-## Part 1 — Building the Foundation
+## Part 1 - Building the Foundation
 
 Part 1 focuses on building the foundational website structure and content:
 
@@ -45,7 +45,7 @@ Part 1 focuses on building the foundational website structure and content:
 
 ---
 
-## Part 2 — CSS Styling and Responsive Design
+## Part 2 - CSS Styling and Responsive Design
 
 Part 2 focuses on styling the website and making it responsive:
 
