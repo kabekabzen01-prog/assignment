@@ -130,10 +130,10 @@ Phone responsive view
 | 2026-04-14 | Created README with project overview, goals, features, part details, sitemap, and references |
 | 2026-05-25 | Part 2: Created external stylesheet `style.css` and linked it to all HTML pages |
 | 2026-05-25 | Part 2: Added base styles - font family, colour scheme, CSS reset on `body` and `*` |
-| 2026-05-25 | Part 2: Applied typography styles — `font-family`, `font-size` in `rem`, `line-height`, `letter-spacing` on headings |
+| 2026-05-25 | Part 2: Applied typography styles - `font-family`, `font-size` in `rem`, `line-height`, `letter-spacing` on headings |
 | 2026-05-26 | Part 2: Built navigation layout using CSS Flexbox |
 | 2026-05-26 | Part 2: Built events grid and footer layout using CSS Grid |
-| 2026-05-26 | Part 2: Added visual styles — `background-color`, `border`, `box-shadow` on cards, buttons, and footer |
+| 2026-05-26 | Part 2: Added visual styles - `background-color`, `border`, `box-shadow` on cards, buttons, and footer |
 | 2026-05-26 | Part 2: Added `:hover`, `:focus`, and `:active` pseudo-classes to all interactive elements |
 | 2026-05-26 | Part 2: Added CSS variables in `:root` for colours, fonts, spacing, and transitions |
 | 2026-05-27 | Part 2: Added responsive media queries for tablet (900px) and mobile (600px) breakpoints |
@@ -149,7 +149,7 @@ Phone responsive view
 | 2026-06-15 | Part 3: Implemented dynamic cost estimate and date-availability check on the enquiry form using DOM manipulation |
 | 2026-06-17 | Part 3: Converted Policies page into an accessible accordion (`aria-expanded`, animated height) |
 | 2026-06-17 | Part 3: Added a lightbox gallery to the Previous Events page (click to enlarge, close via button/Escape/click-outside) |
-| 2026-06-17 | Part 3: Added live search and "Sort A–Z" functionality to the home page events grid |
+| 2026-06-17 | Part 3: Added live search and "Sort A-Z" functionality to the home page events grid |
 | 2026-06-17 | Part 3: Added `<title>` and `<meta name="description">` tags to every page, and descriptive `alt` text to every image, for on-page SEO |
 | 2026-06-17 | Part 3: Added `robots.txt` and `sitemap.xml` for technical SEO |
 | 2026-06-17 | Part 3: Added a root-level redirect `index.html` so the site resolves correctly when deployed, since the real homepage lives in `html/index.html` |
