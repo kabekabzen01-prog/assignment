@@ -170,8 +170,6 @@ Phone responsive view
 
 Bunnypants Graphic and Web Design Studio, 2025. *Cost to develop a website in South Africa: the complete guide*. [online] Available at: <https://www.bunnypants.co.za/website-development-cost-complete-guide-2025/> [Accessed 13 April 2026].
 
-Depositphotos, 2026. *Photo picture web icon in flat style — vector*. [electronic print] Available at: <https://depositphotos.com/vector/photo-picture-web-icon-in-flat-style-89250312.html> [Accessed 16 April 2026].
-
 Flux Academy, 2025. *Figma tutorial for beginners (13-min crash course)*. [video online] Available at: <https://www.youtube.com/watch?v=jQ1sfKIl50E> [Accessed 19 April 2026].
 
 Font Awesome, 2024. *Font Awesome free icons*. [online] Available at: <https://fontawesome.com> [Accessed 28 May 2026].
