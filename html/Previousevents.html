@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Trevor kabe">
+    <meta name="author" content="Trevor Kabe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse photos from past events catered by Mo'PLK Events Co., including weddings, traditional ceremonies, and celebrations.">
     <meta name="keywords" content="previous catering events, event gallery Polokwane, Mo'PLK Events Co. portfolio, catered events photos">
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Header -->
     <header id="top">
         <nav>
             <ul id="nav-list">
@@ -30,35 +29,31 @@
         <hr>
     </header>
 
-    <!-- Main Content -->
     <main class="previous-events-main">
-        <!-- Page Header -->
         <section class="page-header">
             <h1>Events Show</h1>
             <p class="page-subtitle">A record of beautiful moments</p>
         </section>
 
-        <!-- Previous Events Gallery -->
+        <!-- NOTE: these are placeholder photos. Swap in real event photos
+             once you have them, renaming the files to match the alt text. -->
+        <article class="past-event-card">
+            <div class="event-thumbnail">
+                <img src="../Images/Weddingevent.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
+            </div>
+            <h2>Picture of event</h2>
+            <p>Description of the event.</p>
+        </article>
+        <article class="past-event-card">
+            <div class="event-thumbnail">
+                <img src="../Images/Traditionalevent.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
+            </div>
+            <h2>Picture of event</h2>
+            <p>Description of the event.</p>
+        </article>
 
-            <article class="past-event-card">
-                <div class="event-thumbnail">
-                    <img src="../Images/Eventpicture.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
-                </div>
-                <h2>Picture of event</h2>
-                <p>Description of the event.</p>
-            </article>
-            <article class="past-event-card">
-                <div class="event-thumbnail">
-                    <img src="../Images/Weddingevent.jpg" alt="Photo from a previous event catered by Mo'PLK Events Co." class="lightbox-trigger">
-                </div>
-                <h2>Picture of event</h2>
-                <p>Description of the event.</p>
-            </article>
-
-
-        <!-- Call to Action -->
         <section class="events-cta">
-            <h2>Lets plan your next event!</h2>
+            <h2>Let's plan your next event!</h2>
             <div class="cta-buttons">
                 <a href="enquiry.html">Request Catering</a>
                 <a href="index.html">Return to Home</a>
@@ -66,42 +61,37 @@
         </section>
     </main>
 
-    <!-- Lightbox Overlay (hidden by default, shown via JS) -->
     <div class="lightbox-overlay" id="lightbox-overlay">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
         <img src="" alt="" class="lightbox-image" id="lightbox-image">
     </div>
 
-    <!-- Footer -->
-    <!-- Footer Navigation and Links -->
-     <footer>
-    <div class="footer-inner">
-        <div class="footer-column">
-            <h3>Discover</h3>
-            <a class="footer-link" href="index.html">Home</a>
-            <a class="footer-link" href="About.html">About</a>
-        </div>
-        <div class="footer-column">
-            <h3>Explore</h3>
-            <a class="footer-link" href="Previousevents.html">Previous Event</a>
-            <a class="footer-link" href="enquiry.html">Request Catering</a>
-            <a class="footer-link" href="contact.html">Contact Us</a>
-        </div>
-        <div class="footer-column">
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <a class="footer-link" href="index.html">Home</a>
+                <a class="footer-link" href="About.html">About</a>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a class="footer-link" href="Previousevents.html">Previous Events</a>
+                <a class="footer-link" href="enquiry.html">Request Catering</a>
+                <a class="footer-link" href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
                 <h3>Connect</h3>
                 <i class="fa-brands fa-facebook" style="color: rgb(30, 48, 80);"></i>
                 <i class="fa-brands fa-instagram" style="color: rgb(30, 48, 80);"></i>
                 <i class="fa-brands fa-twitter" style="color: rgb(30, 48, 80);"></i>
                 <i class="fa-brands fa-x-twitter" style="color: rgb(30, 48, 80);"></i>
-
+            </div>
         </div>
-    </div>
         <div class="footer-bottom">
             &copy; 2026 Mo'PLK Events Co. All rights reserved.
         </div>
-
     </footer>
 
     <script src="../js/interactive.js"></script>
-    </body>
+</body>
 </html>

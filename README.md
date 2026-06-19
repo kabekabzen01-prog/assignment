@@ -1,4 +1,4 @@
-# Mo'PLK Events Co. - Web Development Project
+# Mo'PLK Events Co. — Web Development Project
 
 ## Student Information
 - **Name:** Trevor Kabe
@@ -7,30 +7,28 @@
 ---
 
 ## Project Overview
-This website is a responsive, multi-page informational site built as part of a web development project. It introduces the Mo'PLK Events Co. organisation, highlights catering services and event types, and helps visitors navigate key pages.
+Mo'PLK Events Co. started as something I did with friends back in Turfloop, helping neighbours plan their events. This project turns that into a proper website — somewhere people can actually find us, see what we do, look at past events, and request a catering quote without having to phone first. It's a multi-page site covering the home page, an About page, a Contact page, a catering Enquiry page, our Policies, and a gallery of Previous Events.
 
 ---
 
 ## Website Goals and Objectives
-- Present a clean and easy-to-read site structure for visitors.
-- Communicate the purpose of the organisation and available resources.
-- Offer clear navigation between pages such as Home, About, Contact, Enquiry, Policies, and Events.
-- Support future content growth and improvements.
+- Make it obvious within a few seconds what Mo'PLK Events Co. actually does.
+- Let people request a catering quote and get an instant estimate, instead of waiting on a phone call.
+- Keep the navigation simple — nobody should have to dig to find the Contact or Enquiry page.
+- Build something I can keep adding to after the module ends, since this is a real business and not just an assignment.
 
 ---
 
 ## Key Features and Functionality
-- Multi-page HTML site using semantic structure.
-- Navigation links for fast access to key pages.
-- Organised content sections with headings, text, and imagery.
-- A dedicated contact page and catering enquiry page with form validation.
-- Privacy/policy page outlining costs, validity, and cancellation terms.
-- Event details page for past or upcoming activities.
-- Single external CSS stylesheet (`css/styles.css`) shared by every page.
-- Responsive design supporting desktop, tablet, and mobile screen sizes.
-- Client-side JavaScript form validation with inline error messages.
-- AJAX-style form submission on the contact form (no page reload).
-- Instant catering cost estimate and date-availability check on the enquiry form.
+- Multi-page HTML site with semantic structure throughout.
+- Consistent navigation across every page (Home, About, Contact, Enquiry, Policies, Previous Events).
+- A catering enquiry form that gives an instant cost estimate and checks date availability.
+- A general contact form with AJAX submission (no page reload).
+- An interactive map on the Contact page showing where we're based.
+- A collapsible accordion on the Policies page, and a lightbox gallery on the Previous Events page.
+- Live search and sort on the home page's events grid.
+- One shared external stylesheet for the whole site.
+- Fully responsive across desktop, tablet, and mobile.
 
 ---
 
@@ -47,7 +45,7 @@ Part 1 focuses on building the foundational website structure and content:
 
 ---
 
-## Part 2 - CSS Styling and Responsive Design
+## Part 2 — CSS Styling and Responsive Design
 
 Part 2 focuses on styling the website and making it responsive:
 
@@ -79,9 +77,9 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 - **Accordion (interactive element):** the Policies page now uses a collapsible accordion — clicking a heading expands or collapses its content, with the panel height animated via JavaScript and accessible `aria-expanded` attributes.
 - **Lightbox gallery (interactive element):** clicking any photo on the Previous Events page opens it full-size in an overlay, closable via the close button, clicking outside the image, or the Escape key.
 - **Search and sort (dynamic content):** the Events section on the home page includes a live search box that filters event cards by name as you type, plus a "Sort A–Z" button that reorders the cards alphabetically and can be reset back to the original order.
-- **SEO — on-page:** descriptive `<title>` and `<meta name="description">` tags added to every page; `<meta name="keywords">` added to every page targeting relevant catering/location terms; all images use descriptive, keyword-relevant `alt` text and were renamed from generic names (e.g. `webpage.jpg`) to descriptive ones (e.g. `team-member-1.jpg`, `wedding-event-catering.jpg`); heading tags (`h1`, `h2`, `h3`) used in a logical structure on every page; internal links connect every page to every other relevant page.
-- **Interactive map:** added a Google Map to the Contact page showing the business location in Polokwane, with a marker and info window. Requires a Google Maps JavaScript API key (see setup note in `js/map.js`).
-- **SEO — technical:** added `robots.txt` to allow search engine crawling, and `sitemap.xml` listing all pages for search engines.
+- **Interactive map:** added a Leaflet map (with free OpenStreetMap tiles, no API key needed) to the Contact page, showing the business location in Polokwane with a marker and popup.
+- **SEO - on-page:** descriptive `<title>` and `<meta name="description">` tags added to every page; `<meta name="keywords">` added to every page targeting relevant catering/location terms; all images use descriptive, keyword-relevant `alt` text and were renamed from generic names (e.g. `webpage.jpg`) to descriptive ones (e.g. `team-member-1.jpg`, `wedding-event-catering.jpg`); heading tags (`h1`, `h2`, `h3`) used in a logical structure on every page; internal links connect every page to every other relevant page.
+- **SEO - technical:** added `robots.txt` to allow search engine crawling, and `sitemap.xml` listing all pages for search engines.
 - **Deployment:** added a root-level redirect `index.html` so the site works correctly when hosted on Netlify or GitHub Pages (the real homepage lives in `html/index.html`).
 
 ---
@@ -116,12 +114,12 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 | 2026-04-14 | Created README with project overview, goals, features, part details, sitemap, and references |
 | 2026-05-25 | Part 2: Created external stylesheet `style.css` and linked it to all HTML pages |
 | 2026-05-25 | Part 2: Added base styles — font family, colour scheme, CSS reset on `body` and `*` |
-| 2026-05-25 | Part 2: Applied typography styles - `font-family`, `font-size` in `rem`, `line-height`, `letter-spacing` on headings |
+| 2026-05-25 | Part 2: Applied typography styles — `font-family`, `font-size` in `rem`, `line-height`, `letter-spacing` on headings |
 | 2026-05-26 | Part 2: Built navigation layout using CSS Flexbox |
 | 2026-05-26 | Part 2: Built events grid and footer layout using CSS Grid |
-| 2026-05-26 | Part 2: Added visual styles - `background-color`, `border`, `box-shadow` on cards, buttons, and footer |
-| 2026-05-26| Part 2: Added `:hover`, `:focus`, and `:active` pseudo-classes to all interactive elements |
-| 2026-05-26| Part 2: Added CSS variables in `:root` for colours, fonts, spacing, and transitions |
+| 2026-05-26 | Part 2: Added visual styles — `background-color`, `border`, `box-shadow` on cards, buttons, and footer |
+| 2026-05-26 | Part 2: Added `:hover`, `:focus`, and `:active` pseudo-classes to all interactive elements |
+| 2026-05-26 | Part 2: Added CSS variables in `:root` for colours, fonts, spacing, and transitions |
 | 2026-05-27 | Part 2: Added responsive media queries for tablet (900px) and mobile (600px) breakpoints |
 | 2026-05-28 | Part 2: Replaced all `px` font sizes with relative `rem` units |
 | 2026-05-28 | Part 2: Updated README with Part 2 section, changelog entries, and corrected references |
@@ -142,7 +140,13 @@ Part 3 focuses on JavaScript functionality, forms, and search engine optimisatio
 | 2026-06-17 | Part 3: Deployed the site (see live link in submission) |
 | 2026-06-18 | Part 3 (Part 2 feedback): Renamed generic image files (`webpage.jpg`, `Eventpicture.jpg`, etc.) to descriptive, SEO-friendly names (`team-member-1.jpg`, `wedding-event-catering.jpg`, etc.) and updated all references |
 | 2026-06-18 | Part 3: Added `<meta name="keywords">` tags to every page |
-| 2026-06-18 | Part 3: Added an interactive Google Map to the Contact page showing the business location, with a marker and info window |
+| 2026-06-18 | Part 3: Added an interactive Leaflet map to the Contact page showing the business location, with a marker and popup (uses free OpenStreetMap tiles, no API key needed) |
+| 2026-06-19 | Part 3 (bug fix): `js/Map.js` was saved with a capital "M" while every page links to `../js/map.js` (lowercase) — this works on Windows/Mac but breaks on case-sensitive hosts like GitHub Pages. Renamed the file to lowercase. |
+| 2026-06-19 | Part 3 (bug fix): `styles.css` referenced a CSS variable, `--transition-smooth`, that was never defined in `:root` — replaced with the existing `--transition-fast` variable on form input focus states. |
+| 2026-06-19 | Part 3 (bug fix): `About.html` team section was accidentally pointing at the responsive-testing screenshots (`phone.png`, `Tablet.jpg`, `Sitemap.png`) used elsewhere in this README, instead of real team photos. Replaced with placeholder filenames (`team-member-1.jpg` through `team-member-4.jpg`) and improved alt text. |
+| 2026-06-19 | Part 3 (bug fix): `Previousevents.html` gallery was duplicating the hero image and the Wedding Events card image instead of having its own photos. Pointed it at dedicated placeholder filenames (`previous-event-photo-1.jpg`, `previous-event-photo-2.jpg`). |
+| 2026-06-19 | Part 3 (bug fix): Corrected this README, which incorrectly described the Contact page map as a Google Map requiring an API key — the actual implementation uses Leaflet with free OpenStreetMap tiles. |
+| 2026-06-19 | Rewrote the Project Overview, Goals, and Key Features sections in my own words |
 
 ---
 
@@ -162,11 +166,11 @@ Google Fonts, 2024. *Lato*. [online] Available at: <https://fonts.google.com/spe
 
 Google Fonts, 2024. *Playfair Display*. [online] Available at: <https://fonts.google.com/specimen/Playfair+Display> [Accessed 28 May 2026].
 
-Google Maps Platform, 2024. *Maps JavaScript API*. [online] Available at: <https://developers.google.com/maps/documentation/javascript> [Accessed 18 June 2026].
-
 Google Search Central, 2024. *Build and submit a sitemap*. [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap> [Accessed 17 June 2026].
 
 Google Search Central, 2024. *Introduction to robots.txt*. [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/robots/intro> [Accessed 17 June 2026].
+
+Leaflet, 2024. *Leaflet: an open-source JavaScript library for interactive maps*. [online] Available at: <https://leafletjs.com> [Accessed 18 June 2026].
 
 Lyyti, 2025. *Event marketing KPIs: metrics you need to track*. [online] Available at: <https://www.lyyti.com/en/blog/event-marketing-kpis-metrics-you-need-to-track> [Accessed 13 April 2026].
 
@@ -182,4 +186,6 @@ Mozilla Developer Network, 2024. *Using the Fetch API*. [online] Available at: <
 
 Mozilla Developer Network, 2024. *Client-side form validation*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation> [Accessed 15 June 2026].
 
-Slickplan, 2023. *What is a sitemap? let's break it down simply*. [video online] Available at: <https://www.youtube.com/watch?v=GjEIuy9s4is> [Accessed 16 April 2026].g
+OpenStreetMap Foundation, 2024. *OpenStreetMap*. [online] Available at: <https://www.openstreetmap.org> [Accessed 18 June 2026].
+
+Slickplan, 2023. *What is a sitemap? Let's break it down simply*. [video online] Available at: <https://www.youtube.com/watch?v=GjEIuy9s4is> [Accessed 16 April 2026].

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
 
 /* =============================================
-   CSS Variables (Base Style)
+   CSS Variables
    ============================================= */
 :root {
     --font-body:    'Lato', sans-serif;
@@ -22,8 +22,8 @@
     --color-error:         #c0392b;
     --color-success:       #1e7e34;
 
-    --nav-logo-width: 9rem;
-    --radius-base:    0.375rem;
+    --nav-logo-width:  9rem;
+    --radius-base:     0.375rem;
     --transition-fast: 0.25s ease;
 }
 
@@ -37,7 +37,7 @@
 }
 
 /* =============================================
-   Base / Body Styles
+   Base / Body
    ============================================= */
 body {
     font-family: var(--font-body);
@@ -78,7 +78,7 @@ p {
 }
 
 /* =============================================
-   Header & Navigation (shared across all pages)
+   Header & Navigation
    ============================================= */
 header {
     background-color: var(--color-panel);
@@ -98,7 +98,6 @@ header hr {
     margin: 0 auto;
 }
 
-/* Center brand logo */
 #nav-list li:nth-child(3) {
     flex: 1;
     text-align: center;
@@ -141,7 +140,7 @@ header hr {
 }
 
 /* =============================================
-   Main Container (shared)
+   Main Container
    ============================================= */
 main {
     max-width: var(--max-width);
@@ -150,7 +149,7 @@ main {
 }
 
 /* =============================================
-   Buttons (shared: .btn and .return-btn)
+   Buttons
    ============================================= */
 .btn,
 .return-btn {
@@ -191,7 +190,6 @@ main {
     margin: 1.5rem auto;
 }
 
-/* Orange catering CTA variant */
 .catering-cta {
     display: inline-flex;
     align-items: center;
@@ -214,7 +212,7 @@ main {
 }
 
 /* =============================================
-   Footer (shared across all pages)
+   Footer
    ============================================= */
 footer,
 Footer {
@@ -312,13 +310,6 @@ Footer {
     margin-bottom: 1.5rem;
 }
 
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
 .events-filter {
     display: flex;
     justify-content: center;
@@ -355,9 +346,7 @@ Footer {
     transition: background-color var(--transition-fast);
 }
 
-.filter-btn:hover {
-    background-color: var(--color-button-hover);
-}
+.filter-btn:hover { background-color: var(--color-button-hover); }
 
 .filter-btn:focus {
     outline: 2px solid var(--color-accent);
@@ -376,6 +365,13 @@ Footer {
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .event-card {
@@ -447,9 +443,7 @@ section p {
 /* =============================================
    PAGE: About (About.html)
    ============================================= */
-.about-header {
-    text-align: center;
-}
+.about-header { text-align: center; }
 
 #Images {
     text-align: center;
@@ -474,9 +468,7 @@ section p {
     color: #222;
 }
 
-.events-gallery {
-    margin-bottom: 2.5rem;
-}
+.events-gallery { margin-bottom: 2.5rem; }
 
 .history-card {
     background-color: var(--color-card);
@@ -487,24 +479,15 @@ section p {
     margin: 0 auto;
 }
 
-.history-card h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.history-card p {
-    font-size: 1.1rem;
-}
+.history-card h2 { margin-top: 0; margin-bottom: 1rem; }
+.history-card p  { font-size: 1.1rem; }
 
 .team-section {
     padding: 2rem 1rem;
     text-align: center;
 }
 
-.team-section h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+.team-section h3 { font-size: 1.5rem; font-weight: 700; }
 
 .section-subtitle {
     display: block;
@@ -540,22 +523,13 @@ section p {
     display: block;
 }
 
-.team-card h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.1rem;
-}
+.team-card h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+.team-card p  { color: var(--color-text-muted); }
 
-.team-card p {
-    color: var(--color-text-muted);
-}
-
-.service-section {
-    padding: 2rem 1rem;
-    text-align: center;
-}
+.service-section { padding: 2rem 1rem; text-align: center; }
 
 /* =============================================
-   PAGE: Contact (contact.html) & Enquiry (enquiry.html)
+   PAGE: Contact & Enquiry
    ============================================= */
 .contact-page-header,
 .form-page-header {
@@ -563,10 +537,7 @@ section p {
     padding: 2rem 1rem 0;
 }
 
-.contact-header,
-.form-page-header {
-    text-align: center;
-}
+.contact-header { text-align: center; }
 
 .contact-header .subtitle,
 .form-page-header p {
@@ -598,9 +569,7 @@ section p {
 }
 
 .contact-info,
-.contact-phone {
-    margin-top: 0.75rem;
-}
+.contact-phone { margin-top: 0.75rem; }
 
 .message-form,
 .form-container {
@@ -626,10 +595,7 @@ section p {
     margin-top: 1rem;
 }
 
-.form-group {
-    display: grid;
-    gap: 0.4rem;
-}
+.form-group { display: grid; gap: 0.4rem; }
 
 .form-group label {
     font-size: 0.9rem;
@@ -637,9 +603,7 @@ section p {
     color: var(--color-text);
 }
 
-.required {
-    color: var(--color-error);
-}
+.required { color: var(--color-error); }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
@@ -667,13 +631,14 @@ section p {
     resize: vertical;
 }
 
+/* BUG FIX: was var(--transition-smooth) which doesn't exist — changed to --transition-fast */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
     box-shadow: 0 0 0 3px rgba(43, 130, 231, 0.2);
-    transition: all var(--transition-smooth);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .form-group input.invalid,
@@ -702,15 +667,8 @@ section p {
     border-radius: var(--radius-base);
 }
 
-.form-status.success {
-    background-color: #e6f4ea;
-    color: var(--color-success);
-}
-
-.form-status.error {
-    background-color: #fdecea;
-    color: var(--color-error);
-}
+.form-status.success { background-color: #e6f4ea; color: var(--color-success); }
+.form-status.error   { background-color: #fdecea; color: var(--color-error); }
 
 .enquiry-result {
     margin-top: 1.5rem;
@@ -720,14 +678,8 @@ section p {
     border-left: 4px solid var(--color-accent);
 }
 
-.enquiry-result h3 {
-    margin-bottom: 0.75rem;
-}
-
-.enquiry-result p {
-    margin-bottom: 0.5rem;
-    color: var(--color-text);
-}
+.enquiry-result h3 { margin-bottom: 0.75rem; }
+.enquiry-result p  { margin-bottom: 0.5rem; color: var(--color-text); }
 
 .result-note {
     font-size: 0.8rem;
@@ -735,30 +687,22 @@ section p {
     margin-top: 0.75rem;
 }
 
-.available { color: var(--color-success); }
+.available   { color: var(--color-success); }
 .unavailable { color: var(--color-error); }
 
-.back-home-container {
-    margin-top: 1.5rem;
-    text-align: center;
-}
+.back-home-container { margin-top: 1.5rem; text-align: center; }
 
 /* =============================================
    PAGE: Policies (policies.html)
    ============================================= */
-.policies-main {
-    padding: 2rem 1rem;
-}
+.policies-main { padding: 2rem 1rem; }
 
 .policies-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.policies-subtitle {
-    color: var(--color-text);
-    margin-top: 0.75rem;
-}
+.policies-subtitle { color: var(--color-text); margin-top: 0.75rem; }
 
 .policy-item {
     background-color: var(--color-card);
@@ -783,13 +727,9 @@ section p {
     color: var(--color-text);
 }
 
-.accordion-header h2 {
-    margin: 0;
-}
+.accordion-header h2 { margin: 0; }
 
-.accordion-header:hover {
-    background-color: rgba(0, 0, 0, 0.03);
-}
+.accordion-header:hover { background-color: rgba(0, 0, 0, 0.03); }
 
 .accordion-header:focus {
     outline: 2px solid var(--color-accent);
@@ -804,18 +744,14 @@ section p {
     margin-left: 1rem;
 }
 
-.accordion-content {
-    padding: 0 1.75rem;
-}
+.accordion-content { padding: 0 1.75rem; }
 
 .accordion-content p,
-.accordion-content ul {
-    padding-bottom: 1.25rem;
-}
+.accordion-content ul { padding-bottom: 1.25rem; }
 
-.accordion-content p:first-child {
-    padding-top: 0;
-}
+.accordion-content p:first-child { padding-top: 0; }
+
+.return-home { text-align: center; margin: 2rem 0 0; }
 
 /* =============================================
    Lightbox Gallery
@@ -825,9 +761,7 @@ section p {
     transition: transform var(--transition-fast);
 }
 
-.lightbox-trigger:hover {
-    transform: scale(1.03);
-}
+.lightbox-trigger:hover { transform: scale(1.03); }
 
 .lightbox-overlay {
     position: fixed;
@@ -842,10 +776,7 @@ section p {
     z-index: 1000;
 }
 
-.lightbox-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
+.lightbox-overlay.active { opacity: 1; pointer-events: auto; }
 
 .lightbox-image {
     max-width: 90vw;
@@ -866,14 +797,7 @@ section p {
     cursor: pointer;
 }
 
-.lightbox-close:focus {
-    outline: 2px solid var(--color-accent);
-}
-
-.return-home {
-    text-align: center;
-    margin: 2rem 0 0;
-}
+.lightbox-close:focus { outline: 2px solid var(--color-accent); }
 
 /* =============================================
    PAGE: Previous Events (Previousevents.html)
@@ -897,8 +821,6 @@ section p {
     letter-spacing: 0.02em;
 }
 
-/* Renamed from .event-card to avoid collision with the home page's
-   event-type cards, which use a different visual style. */
 .past-event-card {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 1.5rem;
@@ -921,20 +843,10 @@ section p {
     display: block;
 }
 
-.events-cta {
-    text-align: center;
-    padding: 3rem 1rem;
-}
+.events-cta { text-align: center; padding: 3rem 1rem; }
+.events-cta h2 { margin-bottom: 1.5rem; }
 
-.events-cta h2 {
-    margin-bottom: 1.5rem;
-}
-
-.cta-buttons {
-    display: grid;
-    justify-content: center;
-    gap: 1.25rem;
-}
+.cta-buttons { display: grid; justify-content: center; gap: 1.25rem; }
 
 .cta-buttons a {
     display: inline-flex;
@@ -952,15 +864,8 @@ section p {
     text-decoration: none;
 }
 
-.cta-buttons a:first-child {
-    background-color: #f28c1f;
-    color: #111;
-}
-
-.cta-buttons a:last-child {
-    background-color: #222;
-    color: #fff;
-}
+.cta-buttons a:first-child { background-color: #f28c1f; color: #111; }
+.cta-buttons a:last-child  { background-color: #222; color: #fff; }
 
 .cta-buttons a:hover {
     transform: translateY(-2px);
@@ -968,22 +873,18 @@ section p {
 }
 
 /* =============================================
-   Responsive — Tablet (max-width: 900px)
+   Responsive — Tablet (900px)
    ============================================= */
 @media (max-width: 900px) {
     h2 { font-size: 1.5rem; }
-
     .nav-logo { width: 7rem; }
-
     .events-grid { grid-template-columns: repeat(2, 1fr); }
-
     .hero-image { height: 22rem; }
-
     .footer-inner { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* =============================================
-   Responsive — Mobile (max-width: 600px)
+   Responsive — Mobile (600px)
    ============================================= */
 @media (max-width: 600px) {
     #nav-list {
@@ -992,30 +893,19 @@ section p {
         text-align: center;
     }
 
-    #nav-list li:nth-child(3) {
-        flex: none;
-    }
+    #nav-list li:nth-child(3) { flex: none; }
 
     .nav-logo { width: 6rem; }
-
     h2 { font-size: 1.3rem; }
-
     .events-grid { grid-template-columns: 1fr; }
-
     .hero-image { height: 14rem; }
-
     .footer-inner { grid-template-columns: 1fr; }
 
     section,
-    .who-we-are {
-        padding: 1.5rem 1rem;
-    }
+    .who-we-are { padding: 1.5rem 1rem; }
 
     .btn,
-    .return-btn {
-        width: 100%;
-        text-align: center;
-    }
+    .return-btn { width: 100%; text-align: center; }
 
     .events-filter {
         flex-direction: column;
@@ -1027,11 +917,6 @@ section p {
         width: 100%;
     }
 
-    .filter-btn {
-        width: 100%;
-    }
-
-    #map {
-        height: 14rem;
-    }
+    .filter-btn { width: 100%; }
+    #map { height: 14rem; }
 }
